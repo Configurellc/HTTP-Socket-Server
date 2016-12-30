@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   let errorModule = `
     <!DOCTYPE html>
     <html lang="en">
@@ -19,3 +20,28 @@
 module.exports = {
   error: errorModule
 }
+=======
+// jshint esversion: 6
+let header;
+
+let error = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Element not found!</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <h1>404</h1>
+  <h2>Element not found!</h2>
+  <p>
+    <a href="/">back</a>
+  </p>
+</body>
+</html>`;
+
+module.exports = {
+  error: error,
+  header: header
+};
+>>>>>>> 33cba4cf28808458f92bac25c76742af87475481
