@@ -9,12 +9,11 @@ let server = net.createServer( (socket) => {
 
     socket.on('data', (chunk) => {
       let request = chunk.split( ' ');
-      let responseMethod = request[0];
-      let uriResponse = request[1];
+      let responseMethod = request[0];//response code
+      let uriResponse = request[1];//URI
 
       console.log(chunk);
-      // console.log(chunk.split(" "));
-      // console.log(uriResponse);
+
     })
 
 })
