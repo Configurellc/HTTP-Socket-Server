@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+// jshint esversion: 6
+let header;
+
+let error = `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -12,5 +15,9 @@
     <a href="/">back</a>
   </p>
 </body>
-</html>
-Raw
+</html>`;
+
+module.exports = {
+  error: error,
+  header: header
+};
