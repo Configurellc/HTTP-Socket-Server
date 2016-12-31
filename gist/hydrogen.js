@@ -1,3 +1,12 @@
+ function headerHandler(reqLine, dateTime, host) {
+   let Line = reqLine;
+   let date = dateTime
+   let hostname = host;
+
+
+   return `${Line}\n${date}\n${hostname}`;
+ }
+
 let hydrogenModule = `
       <!DOCTYPE html>
       <html lang="en">
@@ -17,5 +26,6 @@ let hydrogenModule = `
 
 
 module.exports ={
+  headerHandler: headerHandler,
   hydrogen: hydrogenModule
 }

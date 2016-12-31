@@ -1,4 +1,12 @@
 
+ function headerHandler(reqLine, dateTime, host) {
+   let Line = reqLine;
+   let date = dateTime
+   let hostname = host;
+
+
+   return `${Line}\n${date}\n${hostname}`;
+ }
 let heliumModule = `
       <!DOCTYPE html>
       <html lang="en">
@@ -17,5 +25,6 @@ let heliumModule = `
       </html>`;
 
 module.exports = {
+  headerHandler: headerHandler,
   helium: heliumModule
 }
